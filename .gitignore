@@ -1,2 +1,3 @@
- /airy/__pycache__
- /airy/logs
+ airy/__pycache__/
+ airy/logs/
+ random_walks/logs/
