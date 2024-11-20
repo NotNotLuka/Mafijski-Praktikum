@@ -1,3 +1,9 @@
- airy/__pycache__/
- airy/logs/
- random_walks/logs/
+*/__pycache__/
+*/logs/
+.venv/
+*/mp*.pdf
+*/mp*.tex
+*/test.py
+autocorrelation/data/satellite.wav
+autocorrelation/data/satellite2.wav
+autocorrelation/data/output.wav
