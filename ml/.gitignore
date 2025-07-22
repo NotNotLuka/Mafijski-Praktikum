@@ -1,0 +1,6 @@
+data/
+higgs_csv/
+catboost_info/
+aucs.npy
+*.log
+output/

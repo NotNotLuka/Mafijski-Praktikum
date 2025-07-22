@@ -15,7 +15,7 @@ plt.rcParams.update(
 
 a = 1
 sigma = 0.25
-D = 1
+D = 0.8
 
 
 def draw(result, x, ts, name="", force_norm=False):
@@ -212,7 +212,22 @@ def compare(clean=False):
     draw(diff, x, ts, "diffclean", True)
 
 
-fourier_draw(True)
-fourier_draw()
-splines_draw()
-compare(True)
+def fourier_sine():
+    T0 = lambda x: np.sin(x)
+
+    x = np.linspace(0, 2 * np.pi, 1000)
+    ts = np.linspace(0, 0.1, 1000)
+    gauss_initial = T0(x)
+    domain = a
+
+    result = fourier_solve(x, ts, gauss_initial, domain)
+
+    result = np.array(result)
+    draw(result, x, ts)
+
+
+# fourier_draw(True)
+# fourier_draw()
+# splines_draw()
+# compare(True)
+fourier_sine()
